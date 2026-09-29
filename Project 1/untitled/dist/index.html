@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+     <link rel="stylesheet" href="./style.css">
+     
+    <title>My Resume</title>
+  </head>
+  <body>
+    <header> <!-- container tag-->
+    <h2>sofiya naaz</h2>
+    <p>final year student and I,m interested in learning web development</p>
+    </header>
+     <!--Container tag-->
+      <nav> <!--Container tag, its not going to make it look like a navigation bar, you will have to write CSS for that.--> 
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-exp">Work Experience/internships</a></li>
+        <!--<li ><a href="#work-exp">Internships</a></li>-->
+        <li><a href="#projects">Projects</a></li>
+        <!-- Mandatory sections-->
+        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="#admin-login" id="admin-btn" >Admin Login</a></li>
+      </ul>
+      </nav>
+      <button id="toggle-theme">Toggle Theme</button>
+    
+
+      <section id="education" class="section-blocks"> <!--Container tag-->
+        <h2 >Education</h2>
+        <div class="section-item">
+       <h3>SREE DATHHA GROUP OF ENGINEERING</h3>
+        <p>CSE</p>
+        <p>2027</p>
+        </div>
+        <div class="section-item">
+        <h3>INTER</h3>
+        <p>MPC</p>
+        <p>2023</p>
+        </div>
+        <div class="section-item">
+        <h3>SSC</h3>
+        <p>10TH</p>
+        <p>2021</p>
+        </div>
+         
+      </section>
+    <section id="projects" class="section-blocks">
+      <h2>Projects</h2>
+      <div class="section-item">
+        <h3>Phishing Website Detection</h3>
+      </div>
+    </section>
+
+     <section id="work-exp" class="section-blocks"> <!--Container tag-->
+        <h2>internship</h2>
+      <div class="section-item">
+        <h3>Learning Zone skillentrix</h3>
+        <p>web Development</p>
+        <p>2026 </p>
+      </div>
+    </section>
+         
+      
+      <section id="contact-me" class="section-blocks">
+        <h2>Contact Me</h2>
+
+        <form  id="contact-form">
+          <div>
+          <label>Name:</label>
+          <input type="text" id="input-name" required>
+          </div>
+
+          <!--Form Validation-->
+          <!-- Regular Expressions--> <!-- intermediate-->
+          <div >
+          <label>Email:</label>
+          <input type="email" id="input-email" required>
+          </div>
+
+          <div > <!-- Container tag, no output, only holds other tags-->
+          <label>Message:</label>
+          <textarea id="input-msg" required></textarea>
+          </div>
+
+          <button type = "submit">submit</button> <!-- trigger a submit event-->
+          <!--<button>Reset Data</button>-->
+        </form>
+
+      </section>
+
+       <section id="admin-login" class="section-blocks">
+        <h2>Admin Login</h2>
+
+        <form id ="admin-form"> <!--container tag-->
+          <div >
+          <label>Username:</label>
+          <input type="text" id="input-username" required>
+          </div>
+
+          <div >
+          <label>Password:</label>
+          <input type="password" id="input-password" required>
+          </div>
+
+          <button type="submit">Submit</button>
+          
+        </form>
+       </section>
+
+      <section id="user-responses" class="section-blocks">
+        <h2>User responses</h2>
+        <div id = "user-messages">
+
+          
+        </div>
+      </section>
+    
+
+     
+
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
